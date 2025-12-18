@@ -5,47 +5,30 @@
   font-family: var(--primary-font);
 }
 
-:root {
-  --primary-color: #0a9c6f;
-  --grey-900: #0d1919;
-  --grey-800: #121b22;
-  --grey-600: #1f2c34;
-  --grey-700: #9f9fa1;
-  --grey-500: #dfdfe1;
-  --grey-300: #fefff6;
-  --grey-200: #f1f2f6;
-  --green-400: #138b80;
-  --green-300: #2dca7a;
-  --green-100: #dcf8c6;
-  --primary-font: "Roboto", sans-serif;
-}
-
 body {
-  background-color: var(--primary-color);
+  background-color: rgb(1, 55, 105);
   padding: 40px;
 }
 
 .app {
   max-width: 1100px;
   margin: auto;
-  background-color: white;
+  background-color: rgb(6, 26, 56);
   display: grid;
   grid-template-columns: 320px 1fr;
   height: 90vh;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
 }
 
-/* aside styles */
-
 aside {
-  background-color: var(--grey-900);
+  background-color: rgb(20, 45, 77);
   color: white;
 }
 
 aside header {
-  background-color: var(--grey-800);
+  background-color: rgb(4, 31, 54);
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -80,8 +63,8 @@ aside header {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  background-color: var(--grey-800);
-  color: var(--grey-300);
+  background-color: rgba(0, 0, 0, 0.336);
+  color: rgb(255, 255, 255);
   transition: transform .2s;
 }
 
@@ -90,32 +73,28 @@ aside header {
 }
 
 .actions button:hover {
-  background-color: var(--grey-700);
+  background-color: rgba(255, 255, 255, 0.219);
   transform: translateY(-4px);
 }
 
-/* search input */
 .search {
-  background-color: var(--grey-800);
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  background-color: rgb(0, 31, 59);
   padding: 10px;
 }
 
 .search form input {
-  background-color: var(--grey-700);
+  background-color: rgba(0, 0, 0, 0.384);
   width: 100%;
   display: block;
   border: none;
   padding: 10px;
   border-radius: 10px;
   outline: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .search input:focus {
-  outline: 1px solid var(--grey-300);
+  outline: 1px solid rgb(0, 89, 255);
 }
 
 .chats ul {
@@ -126,7 +105,6 @@ aside header {
 }
 
 .user-chat {
-  background-color: var(--grey-900);
   display: flex;
   padding: 10px;
   align-items: center;
@@ -139,15 +117,13 @@ aside header {
 }
 
 .user-chat:hover {
-  background-color: var(--grey-700);
+  background-color: rgba(0, 0, 0, 0.219);
   cursor: pointer;
-  border-left: 3px solid var(--green-400);
+  border-left: 3px solid rgb(0, 89, 255);
 }
 
-/* messages panel */
-
 .chat-header {
-  background-color: var(--grey-300);
+  background-color: rgb(4, 31, 54);
   border-bottom: 1px solid var(--grey-500);
   display: flex;
   padding: 10px;
@@ -164,8 +140,6 @@ aside header {
   color: var(--grey-700);
 }
 
-/* messages styles */
-
 .chat-panel {
   display: flex;
   flex-direction: column;
@@ -181,11 +155,10 @@ aside header {
   overflow-y: auto;
 }
 
-
 .message {
-  background-color: var(--grey-300);
+  background-color: rgb(0, 132, 255);
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.238);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.493);
   padding: 10px;
   width: 60%;
 }
@@ -199,14 +172,12 @@ aside header {
 
 .me {
   align-self: end;
-  background-color: var(--green-100);
+  background-color: rgb(14, 51, 133);
 }
-
-/* footer styles */
 
 footer {
   display: flex;
-  background-color: var(--grey-500);
+  background-color: rgba(20, 45, 77);
   align-items: center;
   justify-content: space-between;
   align-items: center;
@@ -229,7 +200,7 @@ footer .attach {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  color: var(--grey-700);
+  color: rgb(255, 255, 255);
   transition: color .2s;
 }
 
@@ -246,20 +217,20 @@ footer form {
 footer textarea {
   padding: 8px;
   resize: none;
-  border-radius: 15px;
+  border-radius: 20px;
   width: 100%;
   border: none;
 }
 
 footer textarea:focus {
-  outline: 1px solid var(--grey-700);
+  outline: 3px solid rgb(0, 89, 255);
   border: none;
 }
 
 footer .send {
-  background-color: #2dca7a;
+  background-color: #2065e4;
   border: none;
-  color: var(--grey-300);
+  color: rgb(0, 0, 0);
   width: 45px;
   height: 30px;
   border-radius: 20px;
@@ -269,11 +240,10 @@ footer .send {
 }
 
 footer .send:hover {
-  background-color: #138b80;
+  background-color: #084594;
   transform: scale(0.98);
 }
 
-/* responsive desing */
 @media (max-width:880px) {
   .app {
     grid-template-columns: 1fr;
