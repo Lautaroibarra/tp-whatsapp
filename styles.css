@@ -105,7 +105,8 @@ aside header {
 }
 
 .user-chat {
-  display: flex;
+  display: grid;
+  grid-template-columns: 50px 1fr;
   padding: 10px;
   align-items: center;
   gap: 10px;
@@ -244,6 +245,32 @@ footer .send:hover {
   transform: scale(0.98);
 }
 
+h3{
+    color: rgb(255, 255, 255);
+}
+
+p{
+    color: white;
+}
+
+.padre-noti{
+display: flex;
+width: 100%;
+justify-content: space-between;
+}
+
+.notificacion{
+height: 22.5px;
+width: 23px;
+align-self: flex-end;
+}
+
+.check{
+    height: 22.5px;
+    width: 22.5px;
+    align-self: flex-end;
+}
+
 @media (max-width:880px) {
   .app {
     grid-template-columns: 1fr;
@@ -252,12 +279,4 @@ footer .send:hover {
   aside {
     display: none;
   }
-}
-
-h3{
-    color: rgb(255, 255, 255);
-}
-
-p{
-    color: white;
 }
